@@ -138,3 +138,17 @@ body {
   opacity: 1;
   transition: all 1.5s ease 0s;
 }
+
+
+/* Animate on hover */
+
+@keyframes shake-pack-01 {
+  0% { transform: translate(-8px, -14px); }
+  33% { transform: translate(-10px, -14px); }
+  66% { transform: translate(-10px, -16px); }
+  100% { transform: translate(-8px, -16px); }
+}
+
+.shake {
+  animation: shake-pack-01 .8s infinite alternate;
+}

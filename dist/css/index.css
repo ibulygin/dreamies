@@ -1396,6 +1396,7 @@ template {
 .cat-astronomer-block {
   width: inherit;
   position: relative;
+  opacity: 0;
 }
 .cat-astronomer-block__about {
   padding-top: 190px;
@@ -1441,6 +1442,7 @@ template {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  opacity: 0;
 }
 .cat-astronomer-comix-slides {
   width: 1360px;
@@ -1565,6 +1567,88 @@ template {
   line-height: 120%;
   text-align: center;
   color: #000000;
+}
+.cat-astronomer-three-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.cat-astronomer-three-slide__cat {
+  position: absolute;
+  width: 300px;
+  right: 12px;
+  top: 30px;
+}
+.cat-astronomer-three-slide__background {
+  position: absolute;
+  width: 370px;
+  height: 203px;
+  top: 67px;
+  left: 35px;
+}
+.cat-astronomer-three-slide__history {
+  position: absolute;
+  width: 280px;
+  height: 136px;
+  top: 80px;
+  left: 84px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+.cat-astronomer-four-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.cat-astronomer-four-slide__cat {
+  position: absolute;
+  width: 272px;
+  left: 70px;
+  top: 10px;
+  opacity: 0;
+}
+.cat-astronomer-four-slide__hand {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  top: 150px;
+  left: 20px;
+}
+.cat-astronomer-four-slide__portal {
+  position: absolute;
+  width: 217px;
+  height: 46px;
+  top: 65px;
+  left: 107px;
+}
+.cat-astronomer-four-slide__portal_top {
+  position: absolute;
+  width: 217px;
+  height: 46px;
+  left: 107px;
+  bottom: 50px;
+}
+.cat-astronomer-four-slide__history {
+  position: absolute;
+  width: 290px;
+  height: 221px;
+  padding: 40px 25px 14px 24px;
+  top: 78px;
+  right: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 86px;
 }
 @font-face {
   font-family: 'Comfortaa';
@@ -1769,4 +1853,22 @@ body {
 .active {
   opacity: 1;
   transition: all 1.5s ease 0s;
+}
+/* Animate on hover */
+@keyframes shake-pack-01 {
+  0% {
+    transform: translate(-8px, -14px);
+  }
+  33% {
+    transform: translate(-10px, -14px);
+  }
+  66% {
+    transform: translate(-10px, -16px);
+  }
+  100% {
+    transform: translate(-8px, -16px);
+  }
+}
+.shake {
+  animation: shake-pack-01 0.8s infinite alternate;
 }
