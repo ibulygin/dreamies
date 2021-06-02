@@ -1,51 +1,133 @@
 @import "src/styles/includes/page-content.less";
 @import (less) 'node_modules/normalize.css/normalize.css';
-@import "src/styles/includes/main-block.less";
+@import "includes/blocks/main-block.less";
+@import "includes/blocks/cat-secret-block.less";
+@import "includes/blocks/nuton-block.less";
+@import "includes/blocks/comixes/nuton/main-comix.less";
+@import "includes/blocks/comixes/nuton/comix-one.less";
+@import "includes/blocks/comixes/nuton/comix-two.less";
+@import "includes/blocks/comixes/nuton/comix-three.less";
+@import "includes/blocks/comixes/nuton/comix-four.less";
+@import "includes/blocks/archimede-block.less";
+@import "includes/blocks/comixes/archimede/main-archimede-comix.less";
+@import "includes/blocks/comixes/archimede/archimede-comix-one.less";
+@import "includes/blocks/comixes/archimede/archimede-comix-two.less";
+@import "includes/blocks/comixes/archimede/archimede-comix-tree.less";
+@import "includes/blocks/comixes/archimede/archimede-comix-four.less";
+@import "includes/blocks/cat-medieval-block.less";
+@import "includes/blocks/comixes/medieval-cat/main-medieval-cat-comix.less";
+@import "includes/blocks/comixes/medieval-cat/medieval-cat-comix-one.less";
+@import "includes/blocks/comixes/medieval-cat/medieval-cat-comix-two.less";
+@import "includes/blocks/comixes/medieval-cat/medieval-cat-comix-three.less";
+@import "includes/blocks/comixes/medieval-cat/medieval-cat-comix-four.less";
 
 @font-face {
   font-family: 'Comfortaa';
-  src: local('Comfortaa Light'), local('Comfortaa-Light'), url('/fonts/comfortaalight.woff2') format('woff2'), url('/fonts/comfortaalight.woff') format('woff'), url('/fonts/comfortaalight.ttf') format('truetype');
+  src: local('Comfortaa Light'), local('Comfortaa-Light'), url('../fonts/comfortaalight.woff2') format('woff2'), url('../fonts/comfortaalight.woff') format('woff'), url('../fonts/comfortaalight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Comfortaa';
-  src: local('Comfortaa'), url('/fonts/comfortaa.woff2') format('woff2'), url('/fonts/comfortaa.woff') format('woff'), url('/fonts/comfortaa.ttf') format('truetype');
+  src: local('Comfortaa'), url('../fonts/comfortaa.woff2') format('woff2'), url('../fonts/comfortaa.woff') format('woff'), url('../fonts/comfortaa.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Comfortaa';
-  src: local('Comfortaa Bold'), local('Comfortaa-Bold'), url('/fonts/comfortaabold.woff2') format('woff2'), url('/fonts/comfortaabold.woff') format('woff'), url('/fonts/comfortaabold.ttf') format('truetype');
+  src: local('Comfortaa Bold'), local('Comfortaa-Bold'), url('../fonts/comfortaabold.woff2') format('woff2'), url('../fonts/comfortaabold.woff') format('woff'), url('../fonts/comfortaabold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Chivo';
-  src: local('Chivo'), local('Chivo-Regular'), url('/fonts/chivo.woff2') format('woff2'), url('/fonts/chivo.woff') format('woff'), url('/fonts/chivo.ttf') format('truetype');
+  src: local('Chivo'), local('Chivo-Regular'), url('../fonts/chivo.woff2') format('woff2'), url('../fonts/chivo.woff') format('woff'), url('../fonts/chivo.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Chivo';
-  src: local('Chivo Italic'), local('Chivo-Italic'), url('/fonts/chivoitalic.woff2') format('woff2'), url('/fonts/chivoitalic.woff') format('woff'), url('/fonts/chivoitalic.ttf') format('truetype');
+  src: local('Chivo Italic'), local('Chivo-Italic'), url('../fonts/chivoitalic.woff2') format('woff2'), url('../fonts/chivoitalic.woff') format('woff'), url('../fonts/chivoitalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'Chivo';
-  src: local('Chivo Black'), local('Chivo-Black'), url('/fonts/chivoblack.woff2') format('woff2'), url('/fonts/chivoblack.woff') format('woff'), url('/fonts/chivoblack.ttf') format('truetype');
+  src: local('Chivo Black'), local('Chivo-Black'), url('../fonts/chivoblack.woff2') format('woff2'), url('../fonts/chivoblack.woff') format('woff'), url('../fonts/chivoblack.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'Chivo';
-  src: local('Chivo Black Italic'), local('Chivo-BlackItalic'), url('/fonts/chivoblackitalic.woff2') format('woff2'), url('/fonts/chivoblackitalic.woff') format('woff'), url('/fonts/chivoblackitalic.ttf') format('truetype');
+  src: local('Chivo Black Italic'), local('Chivo-BlackItalic'), url('../fonts/chivoblackitalic.woff2') format('woff2'), url('../fonts/chivoblackitalic.woff') format('woff'), url('../fonts/chivoblackitalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
 
 body {
   font-family: 'Comfortaa', cursive;
+}
+@keyframes move {
+  10% { transform: translateY(25px); }
+  20% { transform: translateY(50px); }
+  30% { transform: translateY(75px); }
+  40% { transform: translateY(100px);}
+  50% { transform: translateY(125px); opacity: 0.6}
+  60% { transform: translateY(150px); opacity: 0.5}
+  70% { transform: translateY(175px); opacity: 0.4}
+  80% {transform: translateY(200px);opacity: 0.3}
+  90% { transform: translateY(225px); opacity: 0.2}
+  100% { transform: translateY(250px); opacity: 0}
+}
+
+
+.move {
+  animation: 0.1ms move  ease-out;
+}
+
+@keyframes cat-hand-move  {
+  10% { transform: translate3d(0px, 30px, 0px); opacity: 1}
+  20% { transform: translate3d(-0px, 70px, 0px); opacity: 1}
+  30% { transform: translate3d(-0px, 90px, 0px); opacity: 1}
+  40% { transform: translate3d(0px, 100px, 0px); opacity: 1}
+  50% { transform: translate3d(0px, 100px, 0px); opacity: 1}
+  60% { transform: translate3d(-40px, 100px, 0px); opacity: 1}
+  70% { transform: translate3d(0px, 100px, 0px); opacity: 1}
+  80% { transform: translate3d(-0px, 100px, 0px); opacity: 1}
+  90% { transform: translate3d(-0px, 115px, 0px); opacity: 0.8}
+  93% { transform: translate3d(-0px, 135px, 0px); opacity: 0.6}
+  96% { transform: translate3d(-0px, 150px, 0px); opacity: 0.4}
+  98% { transform: translate3d(-0px, 160px, 0px); opacity: 0.2}
+  100% { transform: translate3d(0px, 175px, 0px); opacity: 0}
+}
+
+@keyframes cat-hand-move-inverse  {
+  10% { transform: translate3d(0px, 30px, 0px); opacity: 1}
+  20% { transform: translate3d(-0px, 70px, 0px); opacity: 1}
+  30% { transform: translate3d(-0px, 90px, 0px); opacity: 1}
+  40% { transform: translate3d(0px, 100px, 0px); opacity: 1}
+  50% { transform: translate3d(0px, 100px, 0px); opacity: 1}
+  60% { transform: translate3d(40px, 100px, 0px); opacity: 1}
+  70% { transform: translate3d(0px, 100px, 0px); opacity: 1}
+  80% { transform: translate3d(-0px, 100px, 0px); opacity: 1}
+  90% { transform: translate3d(-0px, 115px, 0px); opacity: 0.8}
+  93% { transform: translate3d(-0px, 135px, 0px); opacity: 0.6}
+  96% { transform: translate3d(-0px, 150px, 0px); opacity: 0.4}
+  98% { transform: translate3d(-0px, 160px, 0px); opacity: 0.2}
+  100% { transform: translate3d(0px, 175px, 0px); opacity: 0}
+}
+
+
+.cat-hand-move {
+  animation: cat-hand-move 1.5s ease-out;
+}
+
+.cat-hand-move-inverse {
+  animation: cat-hand-move-inverse 1.5s ease-out;
+}
+
+.active {
+  opacity: 1;
+  transition: all 1.5s ease 0s;
 }

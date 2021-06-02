@@ -1,0 +1,59 @@
+.archimede-block{
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+}
+
+.archimede-slides {
+  width: 1360px;
+  height: 786px;
+  border: 4px solid #89C738;
+  box-sizing: border-box;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__background {
+    &_right {
+      width: 320px;
+      height: 374px;
+      position: absolute;
+      bottom: -60px;
+      z-index: -1;
+      right: 0;
+    }
+    width: 349px;
+    height: 343px;
+    position: absolute;
+    top: 66px;
+    z-index: -1;
+  }
+
+  &__one {
+    box-sizing: border-box;
+    height: 389px;
+    min-width: 676px;
+    border-bottom: 4px solid #89C738;
+    border-right: 4px solid #89C738;
+  }
+  &__two {
+    box-sizing: border-box;
+    height: 389px;
+    min-width: 676px;
+    border-bottom: 4px solid #89C738;
+  }
+  &__three {
+    box-sizing: border-box;
+    height: 389px;
+    min-width: 676px;
+    border-right: 4px solid #89C738;
+  }
+  &__four {
+    box-sizing: border-box;
+    height: 389px;
+    min-width: 676px;
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../vars/dimensions.less";
+
+.nuton-block {
+  width: @width-page;
+  height: 842px;
+  opacity: 0;
+  transition: all 1s ease 0s;
+  display: flex;
+  flex-direction: column;
+
+  &__cartoon {
+    margin-top: 52px;
+  }
+
+  &__slides {
+    margin: 156px auto 0 auto;
+  }
+}
+
+.nuton-cartoon {
+  display: flex;
+  opacity: 0;
+  transition: all 1s ease 0s;
+
+  &__history {
+    width: 799px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+
+    &_one {
+      margin: 0;
+    }
+
+    &_two {
+      margin: 26px 0 0 0;
+    }
+
+  }
+
+  &__tree {
+    width: 375px;
+    height: 510px;
+    margin-left: 78px;
+  }
+
+  &__background {
+    margin-top: -200px;
+    z-index: -1;
+  }
+
+  &__wrapper {
+    padding: 38px 32px;
+    width: 680px;
+    background: #FFFFFF;
+    border: 2px solid #282828;
+    box-sizing: border-box;
+    border-radius: 44px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    margin-left: 40px;
+  }
+}
+
+.nuton-about {
+  width: 845px;
+  height: 171px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  opacity: 0;
+  transition: all 1s ease 0s;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 58px;
+    text-align: center;
+    margin: 0;
+    color: #F67A06;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 26px auto 0 auto;
+  }
+}

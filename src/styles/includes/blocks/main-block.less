@@ -1,4 +1,4 @@
-@import "src/styles/vars/dimensions.less";
+@import "../../vars/dimensions.less";
 
 .main-block {
   height: @main-block-height;
@@ -59,7 +59,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-
+    margin: 0;
   }
 
   &__title {
@@ -85,47 +85,65 @@
     line-height: 110%;
   }
 }
-
 .block-actions {
-  width: 338px;
-  height: @main-block-height;
+  display: flex;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.actions-right {
 
   &__nuton {
-    position: relative;
-    top: 28px;
+    width: 120px;
+    height: 164px;
+    margin-top: 28px;
   }
 
   &__kopernik {
-    position: relative;
-    top: 54px;
+    width: 126px;
+    height: 126px;
+    margin-top: 55px;
   }
 
   &__picasso {
-    position: relative;
-    top: 56px;
+    width: 131px;
+    height: 121px;
+    margin-top: 56px;
   }
 
   &__cat-redactor {
-    position: relative;
-    top: 140px;
+    width: 132px;
+    height: 112px;
+    margin-top: 80px;
   }
+}
+
+.actions-left {
 
   &__arhimed {
-    position: relative;
-    top: 135px;
-    left: 10px;
-  }
-
-  &__shturval {
-    position: relative;
-    top: 170px;
-    left: 10px;
+    width: 196px;
+    height: 196px;
+    margin-top: 135px;
   }
 
   &__cat-on-table {
-    position: relative;
-    top: 150px;
-    left: 20px;
+    width: 144px;
+    height: 111px;
+    margin-top: 7px;
+  }
+
+  &__shturval {
+    width: 135px;
+    height: 158px;
+    margin-top: 56px;
   }
 }
 
