@@ -1393,6 +1393,179 @@ template {
   bottom: 19px;
   left: 98px;
 }
+.cat-astronomer-block {
+  width: inherit;
+  position: relative;
+}
+.cat-astronomer-block__about {
+  padding-top: 190px;
+}
+.cat-astronomer-block__background_top {
+  width: 58px;
+  height: 45px;
+  position: absolute;
+  top: 108px;
+  right: 105px;
+}
+.cat-astronomer-block__background_bottom {
+  width: 112px;
+  height: 87px;
+  position: absolute;
+  top: 342px;
+  left: 39px;
+}
+.cat-astronomer-block-about {
+  width: inherit;
+  height: 171px;
+  text-align: center;
+}
+.cat-astronomer-block-about__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 58px;
+  color: #F67A06;
+  margin: 0;
+}
+.cat-astronomer-block-about__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 26px 0 0 0;
+}
+.cat-astronomer-comix__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.cat-astronomer-comix-slides {
+  width: 1360px;
+  height: 786px;
+  border: 4px solid #89C738;
+  box-sizing: border-box;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cat-astronomer-comix-slides__one {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  border-bottom: 4px solid #89C738;
+  border-right: 4px solid #89C738;
+  opacity: 0;
+}
+.cat-astronomer-comix-slides__two {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  border-bottom: 4px solid #89C738;
+  opacity: 0;
+}
+.cat-astronomer-comix-slides__three {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  border-right: 4px solid #89C738;
+  opacity: 0;
+}
+.cat-astronomer-comix-slides__four {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  opacity: 0;
+}
+.cat-astronomer-slide-one {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  opacity: 0;
+}
+.cat-astronomer-slide-one__background {
+  position: absolute;
+  width: 436px;
+  height: 314px;
+  top: 55px;
+  left: 0;
+  z-index: -1;
+}
+.cat-astronomer-slide-one-history {
+  box-sizing: border-box;
+  position: relative;
+  width: 409px;
+}
+.cat-astronomer-slide-one-history__background {
+  width: 381px;
+  height: 321px;
+  position: absolute;
+  z-index: -1;
+  top: 35px;
+  left: 47px;
+}
+.cat-astronomer-slide-one-history__text {
+  position: absolute;
+  width: 250px;
+  height: 187px;
+  top: 124px;
+  left: 71px;
+  z-index: 3;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #282828;
+}
+.cat-astronomer-slide-one-cat {
+  position: relative;
+  width: 253px;
+}
+.cat-astronomer-slide-one-cat__background {
+  position: absolute;
+  width: 235px;
+  height: 286px;
+  top: 71px;
+  right: 8px;
+}
+.cat-astronomer-two-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.cat-astronomer-two-slide__cat {
+  position: absolute;
+  width: 283px;
+  left: 19px;
+  top: 94px;
+}
+.cat-astronomer-two-slide__pack {
+  position: absolute;
+  width: 71px;
+  left: 38px;
+  top: 184px;
+}
+.cat-astronomer-two-slide__background {
+  position: absolute;
+  width: 322px;
+  height: 266px;
+  top: 61px;
+  right: 18px;
+}
+.cat-astronomer-two-slide__history {
+  position: absolute;
+  width: 250px;
+  height: 187px;
+  top: 105px;
+  right: 49px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
 @font-face {
   font-family: 'Comfortaa';
   src: local('Comfortaa Light'), local('Comfortaa-Light'), url('../fonts/comfortaalight.woff2') format('woff2'), url('../fonts/comfortaalight.woff') format('woff'), url('../fonts/comfortaalight.ttf') format('truetype');
