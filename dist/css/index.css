@@ -1650,6 +1650,238 @@ template {
   box-sizing: border-box;
   border-radius: 86px;
 }
+.black-cat-block {
+  width: inherit;
+  position: relative;
+  opacity: 0;
+}
+.black-cat-block__about {
+  padding-top: 190px;
+}
+.black-cat-block__background_top {
+  width: 58px;
+  height: 45px;
+  position: absolute;
+  top: 108px;
+  right: 105px;
+}
+.black-cat-block__background_bottom {
+  width: 112px;
+  height: 87px;
+  position: absolute;
+  top: 342px;
+  left: 39px;
+}
+.black-cat-block-about {
+  width: inherit;
+  height: 171px;
+  text-align: center;
+}
+.black-cat-block-about__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 58px;
+  color: #F67A06;
+  margin: 0;
+}
+.black-cat-block-about__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 26px 0 0 0;
+}
+.black-cat-comix__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  opacity: 0;
+}
+.black-cat-comix-slides {
+  width: 1360px;
+  height: 786px;
+  border: 4px solid #DCE436;
+  box-sizing: border-box;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.black-cat-comix-slides__one {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  border-bottom: 4px solid #DCE436;
+  border-right: 4px solid #DCE436;
+  opacity: 0;
+}
+.black-cat-comix-slides__two {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  border-bottom: 4px solid #DCE436;
+  opacity: 0;
+}
+.black-cat-comix-slides__three {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  border-right: 4px solid #DCE436;
+  opacity: 0;
+}
+.black-cat-comix-slides__four {
+  box-sizing: border-box;
+  height: 389px;
+  min-width: 676px;
+  opacity: 0;
+}
+.black-cat-one-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.black-cat-one-slide__cat {
+  position: absolute;
+  width: 263px;
+  left: 34px;
+  top: 68px;
+}
+.black-cat-one-slide__pack {
+  position: absolute;
+  width: 92px;
+  left: 230px;
+  bottom: 15px;
+}
+.black-cat-one-slide__background {
+  position: absolute;
+  width: 338px;
+  height: 210px;
+  top: 81px;
+  right: 27px;
+}
+.black-cat-one-slide__history {
+  position: absolute;
+  width: 250px;
+  height: 165px;
+  top: 107px;
+  right: 45px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+.black-cat-two-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.black-cat-two-slide__cat {
+  position: absolute;
+  width: 277px;
+  right: 45px;
+  top: 36px;
+}
+.black-cat-two-slide__pack {
+  position: absolute;
+  width: 92px;
+  left: 230px;
+  bottom: 15px;
+}
+.black-cat-two-slide__background {
+  position: absolute;
+  width: 322px;
+  height: 286px;
+  top: 47px;
+  left: 36px;
+}
+.black-cat-two-slide__history {
+  position: absolute;
+  width: 261px;
+  height: 198px;
+  top: 95px;
+  left: 67px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+.black-cat-three-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.black-cat-three-slide__cat {
+  position: absolute;
+  width: 286px;
+  right: 18px;
+  top: 36px;
+}
+.black-cat-three-slide__pack {
+  position: absolute;
+  width: 92px;
+  left: 230px;
+  bottom: 15px;
+}
+.black-cat-three-slide__background {
+  position: absolute;
+  width: 321px;
+  height: 344px;
+  top: 22px;
+  left: 40px;
+}
+.black-cat-three-slide__history {
+  position: absolute;
+  width: 282px;
+  height: 238px;
+  top: 88px;
+  left: 51px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+.black-cat-four-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.black-cat-four-slide__man {
+  position: absolute;
+  width: 255px;
+  left: 24px;
+  top: 62px;
+}
+.black-cat-four-slide__background {
+  position: absolute;
+  width: 378px;
+  height: 203px;
+  top: 59px;
+  right: 31px;
+}
+.black-cat-four-slide__history {
+  position: absolute;
+  width: 311px;
+  height: 119px;
+  top: 98px;
+  right: 70px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
 @font-face {
   font-family: 'Comfortaa';
   src: local('Comfortaa Light'), local('Comfortaa-Light'), url('../fonts/comfortaalight.woff2') format('woff2'), url('../fonts/comfortaalight.woff') format('woff'), url('../fonts/comfortaalight.ttf') format('truetype');
