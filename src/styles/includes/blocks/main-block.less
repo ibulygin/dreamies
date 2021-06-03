@@ -12,7 +12,8 @@
 
 .logo {
   position: relative;
-  top: 34px;
+  width: 180px;
+  top: 14px;
   left: 40px;
 }
 
@@ -102,6 +103,7 @@
 .actions-right {
 
   &__nuton {
+    display: block;
     width: 120px;
     height: 164px;
     margin-top: 28px;
@@ -132,12 +134,14 @@
     width: 196px;
     height: 196px;
     margin-top: 135px;
+    margin-right: 5px;
   }
 
   &__cat-on-table {
     width: 144px;
     height: 111px;
-    margin-top: 7px;
+    margin-top: 5px;
+    margin-left: 7px;
   }
 
   &__shturval {
@@ -153,4 +157,85 @@
   font-weight: normal;
   font-size: 93px;
   line-height: 111px;
+}
+
+.nuton-tooltip {
+  position: relative;
+  display: block;
+
+  &:hover::before {
+    content: attr(data-title);
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #F67A06;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 194px;
+    height: 68px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    padding: 13px 9px 13px 8px;
+    color: #262626;
+    z-index: 20;
+  }
+}
+
+.arhimed-tooltip {
+  position: relative;
+  display: block;
+
+  &:hover::before {
+    content: attr(data-title);
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #F67A06;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 194px;
+    height: 68px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    padding: 20px 9px 20px 8px;
+    color: #262626;
+    z-index: 20;
+  }
+}
+
+.picasso-tooltip {
+  position: relative;
+  display: block;
+
+  &:hover::before {
+    content: attr(data-title);
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #F67A06;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 194px;
+    height: 68px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    padding: 27px 9px 27px 8px;
+    color: #262626;
+    z-index: 20;
+  }
 }

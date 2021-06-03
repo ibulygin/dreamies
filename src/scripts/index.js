@@ -5,6 +5,7 @@
     const animItems = document.querySelectorAll('.anime');
     const animItemsMove = document.querySelectorAll('.cat-hand');
     const animItemsMoveInverse = document.querySelectorAll('.cat-hand-inverse');
+    const animItemsMoveEnd = document.querySelectorAll('.move-end');
 
     window.addEventListener('scroll', () => {
         const scroll = window.pageYOffset;
@@ -84,6 +85,31 @@
                     animItem.classList.add('cat-hand-move-inverse');
                 } else {
                     animItem.classList.remove('cat-hand-move-inverse');
+                }
+            }
+        }
+
+    }
+
+    if(animItemsMoveEnd.length > 0) {
+        window.addEventListener('scroll', animOnscrollMoveEnd)
+        function animOnscrollMoveEnd() {
+            for(let index = 0; index < animItemsMoveEnd.length; index++) {
+                const animItem = animItemsMoveEnd[index];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top;
+                const animStart = 4;
+
+                let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+                if(animItemHeight > window.innerHeight) {
+                    animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                }
+
+                if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset  < (animItemOffset + animItemHeight)) {
+                    animItem.classList.add('cat-hand-move-end');
+                } else {
+                    animItem.classList.remove('cat-hand-move-end');
                 }
             }
         }

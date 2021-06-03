@@ -45,6 +45,7 @@
 @import "includes/blocks/comixes/writer-cat/writer-cat-comix-two.less";
 @import "includes/blocks/comixes/writer-cat/writer-cat-comix-three.less";
 @import "includes/blocks/comixes/writer-cat/writer-cat-comix-four.less";
+@import "includes/blocks/footer.less";
 
 
 @font-face {
@@ -93,7 +94,11 @@
 
 body {
   font-family: 'Comfortaa', cursive;
+
 }
+
+
+html {scroll-behavior: smooth;}
 @keyframes move {
   10% { transform: translateY(25px); }
   20% { transform: translateY(50px); }
@@ -143,14 +148,34 @@ body {
   98% { transform: translate3d(-0px, 160px, 0px); opacity: 0.2}
   100% { transform: translate3d(0px, 175px, 0px); opacity: 0}
 }
+@keyframes cat-hand-move-end  {
+  0% {transform: translate3d(0px, -40px, 0px); opacity: 0}
+  10% { transform: translate3d(0px, -20px, 0px); opacity: 1}
+  20% { transform: translate3d(-0px, 10px, 0px); opacity: 1}
+  30% { transform: translate3d(-0px, 0px, 0px); opacity: 1}
+  40% { transform: translate3d(0px, 0px, 0px); opacity: 1}
+  50% { transform: translate3d(0px, 0px, 0px); opacity: 1}
+  60% { transform: translate3d(100px, 0px, 0px); opacity: 1}
+  100% { transform: translate3d(-0px, 0px, 0px); opacity: 1}
+}
 
+@keyframes increase  {
+  50% {transform: scale(1.05)}
+}
 
+.increase-icon {
+  animation: increase 2s infinite alternate;
+}
 .cat-hand-move {
   animation: cat-hand-move 1.5s ease-out;
 }
 
 .cat-hand-move-inverse {
   animation: cat-hand-move-inverse 1.5s ease-out;
+}
+
+.cat-hand-move-end {
+  animation: cat-hand-move-end 1.5s ease-out;
 }
 
 .active {

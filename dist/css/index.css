@@ -319,7 +319,8 @@ template {
 }
 .logo {
   position: relative;
-  top: 34px;
+  width: 180px;
+  top: 14px;
   left: 40px;
 }
 .block-info {
@@ -394,6 +395,7 @@ template {
   flex-direction: column;
 }
 .actions-right__nuton {
+  display: block;
   width: 120px;
   height: 164px;
   margin-top: 28px;
@@ -417,11 +419,13 @@ template {
   width: 196px;
   height: 196px;
   margin-top: 135px;
+  margin-right: 5px;
 }
 .actions-left__cat-on-table {
   width: 144px;
   height: 111px;
-  margin-top: 7px;
+  margin-top: 5px;
+  margin-left: 7px;
 }
 .actions-left__shturval {
   width: 135px;
@@ -434,6 +438,84 @@ template {
   font-weight: normal;
   font-size: 93px;
   line-height: 111px;
+}
+.nuton-tooltip {
+  position: relative;
+  display: block;
+}
+.nuton-tooltip:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background: #FFFFFF;
+  border: 1px solid #F67A06;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 194px;
+  height: 68px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  padding: 13px 9px 13px 8px;
+  color: #262626;
+  z-index: 20;
+}
+.arhimed-tooltip {
+  position: relative;
+  display: block;
+}
+.arhimed-tooltip:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background: #FFFFFF;
+  border: 1px solid #F67A06;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 194px;
+  height: 68px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  padding: 20px 9px 20px 8px;
+  color: #262626;
+  z-index: 20;
+}
+.picasso-tooltip {
+  position: relative;
+  display: block;
+}
+.picasso-tooltip:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background: #FFFFFF;
+  border: 1px solid #F67A06;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 194px;
+  height: 68px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  padding: 27px 9px 27px 8px;
+  color: #262626;
+  z-index: 20;
 }
 .secret-block {
   width: 1440px;
@@ -2262,7 +2344,7 @@ template {
   border-bottom: 4px solid #FBE02F;
   opacity: 0;
 }
-.writer-cat-comix-slides__five {
+.writer-cat-comix-slides__three {
   min-width: 1356px;
   box-sizing: border-box;
   height: 614px;
@@ -2329,6 +2411,239 @@ template {
   text-align: center;
   margin: 0;
 }
+.writer-cat-three-slide {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.writer-cat-three-slide__portal {
+  width: 305px;
+  position: absolute;
+  top: 50px;
+  right: 274px;
+}
+.writer-cat-three-slide__hand {
+  position: absolute;
+  width: 251px;
+  top: 40px;
+  right: 0;
+}
+.writer-cat-three-slide__pack {
+  position: absolute;
+  width: 216px;
+  top: 298px;
+  right: 55px;
+}
+.writer-cat-three-slide__cat {
+  position: absolute;
+  width: 360px;
+  top: 40px;
+  right: 218px;
+  opacity: 1;
+}
+.writer-cat-three-slide__background-history {
+  position: absolute;
+  width: 674px;
+  height: 522px;
+  left: 61px;
+  top: 39px;
+}
+.writer-cat-three-slide__history {
+  position: absolute;
+  width: 488px;
+  height: 176px;
+  top: 220px;
+  left: 181px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+.footer {
+  width: inherit;
+  height: 3931px;
+  position: relative;
+  padding-top: 439px;
+  opacity: 0;
+}
+.footer__background {
+  position: absolute;
+  top: 100px;
+  width: 1440px;
+  height: 4270px;
+  z-index: -1;
+  opacity: 0;
+}
+.footer__description {
+  width: 1041px;
+  height: 186px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 120%;
+  text-align: center;
+  color: #282828;
+  margin: 0 auto;
+  opacity: 0;
+}
+.footer__cats {
+  width: inherit;
+  position: relative;
+}
+.footer-cats__cloud-one {
+  width: 204px;
+  position: absolute;
+  top: 72px;
+  right: 137px;
+  opacity: 0;
+}
+.footer-cats__cloud-two {
+  width: 559px;
+  position: absolute;
+  top: 187px;
+  left: 40px;
+  opacity: 0;
+}
+.footer-cats__cloud-two-text {
+  width: 402px;
+  height: 170px;
+  position: absolute;
+  top: 296px;
+  left: 130px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  opacity: 0;
+}
+.footer-cats__cloud-small {
+  height: 827px;
+  position: absolute;
+  top: 625px;
+  left: 0;
+  opacity: 0;
+}
+.footer-cats__cloud-tree {
+  width: 768px;
+  position: absolute;
+  top: 162px;
+  right: 40px;
+  opacity: 0;
+}
+.footer-cats__cloud-tree-text {
+  width: 480px;
+  height: 238px;
+  position: absolute;
+  top: 559px;
+  right: 101px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  opacity: 0;
+}
+.footer-cats__cloud-four {
+  width: 525px;
+  position: absolute;
+  top: 619px;
+  left: 177px;
+  opacity: 0;
+}
+.footer-cats__cloud-four-text {
+  width: 402px;
+  height: 170px;
+  position: absolute;
+  top: 1029px;
+  left: 247px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  opacity: 0;
+}
+.footer-cats__cloud-five {
+  width: 643px;
+  position: absolute;
+  top: 1055px;
+  right: 178px;
+  opacity: 0;
+}
+.footer-cats__cloud-five-text {
+  width: 524px;
+  height: 107px;
+  position: absolute;
+  top: 1451px;
+  right: 222px;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  opacity: 0;
+}
+.footer-cats__pack-cheese {
+  width: 50%;
+  position: absolute;
+  top: 1635px;
+  left: 45px;
+  opacity: 0;
+}
+.footer-cats__pack-mix1 {
+  width: 40%;
+  position: absolute;
+  top: 1852px;
+  right: 149px;
+  opacity: 0;
+}
+.footer-cats__pack-mix2 {
+  width: 50%;
+  position: absolute;
+  top: 2133px;
+  right: 415px;
+  opacity: 0;
+}
+.footer-cats__pack-beef {
+  width: 40%;
+  position: absolute;
+  top: 2306px;
+  left: 64px;
+  opacity: 0;
+}
+.footer-cats__pack-chicken {
+  width: 50%;
+  position: absolute;
+  top: 2306px;
+  right: 40px;
+  opacity: 0;
+}
+.footer-cats__pack-duck {
+  width: 50%;
+  position: absolute;
+  top: 2768px;
+  left: 145px;
+  opacity: 0;
+}
+.footer-cats__pack-fish {
+  width: 50%;
+  position: absolute;
+  top: 2942px;
+  right: 108px;
+  opacity: 0;
+}
 @font-face {
   font-family: 'Comfortaa';
   src: local('Comfortaa Light'), local('Comfortaa-Light'), url('../fonts/comfortaalight.woff2') format('woff2'), url('../fonts/comfortaalight.woff') format('woff'), url('../fonts/comfortaalight.ttf') format('truetype');
@@ -2373,6 +2688,9 @@ template {
 }
 body {
   font-family: 'Comfortaa', cursive;
+}
+html {
+  scroll-behavior: smooth;
 }
 @keyframes move {
   10% {
@@ -2523,11 +2841,56 @@ body {
     opacity: 0;
   }
 }
+@keyframes cat-hand-move-end {
+  0% {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate3d(0px, -20px, 0px);
+    opacity: 1;
+  }
+  20% {
+    transform: translate3d(0px, 10px, 0px);
+    opacity: 1;
+  }
+  30% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+  40% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate3d(100px, 0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes increase {
+  50% {
+    transform: scale(1.05);
+  }
+}
+.increase-icon {
+  animation: increase 2s infinite alternate;
+}
 .cat-hand-move {
   animation: cat-hand-move 1.5s ease-out;
 }
 .cat-hand-move-inverse {
   animation: cat-hand-move-inverse 1.5s ease-out;
+}
+.cat-hand-move-end {
+  animation: cat-hand-move-end 1.5s ease-out;
 }
 .active {
   opacity: 1;
