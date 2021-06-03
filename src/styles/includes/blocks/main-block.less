@@ -4,6 +4,7 @@
   height: @main-block-height;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   &__info {
     padding: 161px 0 0 304px;
@@ -20,6 +21,18 @@
 .block-info {
   height: @main-block-height;
   width: 772px;
+
+  &__disclaimer {
+    position: absolute;
+    width: 392px;
+    height: 42px;
+    top: 671px;
+    left: 40px;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 14px;
+  }
 
   &__logo {
     position: absolute;
