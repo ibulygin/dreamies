@@ -10,15 +10,32 @@
     height: 351px;
     left: 17px;
     top: 13px;
-
+    z-index: -2;
   }
 
   &__text {
+    position: absolute;
+    width: 230px;
+    height: 165px;
+    transform: rotate(-3.49deg);
+    top: 140px;
+    right: 63px;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__text-background {
     position: absolute;
     width: 384px;
     height: 302px;
     top: 58px;
     right: 27px;
-    z-index: 1;
+    z-index: -1;
+
   }
 }

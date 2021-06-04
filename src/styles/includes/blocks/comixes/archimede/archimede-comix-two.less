@@ -18,7 +18,7 @@
     width: 306px;
     height: 381px;
     border: 65px;
-
+    z-index: -1;
   }
 
   &__pack {
@@ -29,12 +29,28 @@
     right: 147px;
   }
 
-  &__text {
+  &__text-background {
     position: absolute;
     width: 306px;
     height: 222px;
     bottom: 65px;
     left: 39px;
-    z-index: 1;
+    z-index: 0;
+  }
+
+  &__text {
+    position: absolute;
+    width: 267px;
+    height: 148px;
+    top: 150px;
+    left: 58px;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+
   }
 }
